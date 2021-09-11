@@ -1,8 +1,27 @@
 body {color:#0065FC;]}
-
+a
+{
+text-decoration: none;
+color:#0065FC;
+font-weight:bold;}
+a:visited {color:#0065FC,}
+a:hover{color:#0065FC;
+}
 @font-face {
     font-family: Raleway;
     src: local("Raleway-Thin-Italic"),
          local("Raleway-Thin"),
          url(Raleway/Raleway-VariableFont_wght.ttf);
 }
+header {
+    display:flex;
+flex-direction:row;
+justify-content: space-between;
+}
+img nav
+{display:flex;
+flex-direction: column;
+justify-content: space-around;}
+
+#icône
+{border-radius: 50%;}
