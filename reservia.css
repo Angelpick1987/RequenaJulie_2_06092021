@@ -1,3 +1,7 @@
+/*  210921 font face ok 
+header footer ok 
+validator ok erreur syntaxe à revoir */
+
 @font-face {
     font-family: Raleway;
     src: local("Raleway-Thin-Italic"),
@@ -11,7 +15,7 @@ a
 text-decoration: none;
 color:#0065FC;
 font-weight:bold;}
-a:visited {color:#0065FC,}
+a:visited {color:#0065FC;}
 a:hover{color:#0065FC;
 
 }
@@ -42,28 +46,61 @@ background-color:#F2F2F2;
 border-radius: 30px;
 border-spacing:15px;
 display: flex;
-height:auto;
-justify-content: center;
+justify-content:space-between;
 flex-direction: column;
-align-items:space-between;
 }
 
-.Hôtels, .Popularity, .Activities
-{display: flex;
+.hotels, .Popularity, .Activities
+{display:flex;
+    width:auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+margin: 0px 0px 32px 0px; 
+padding:32px;
+justify-content:space-around;
+align-content:stretch;
+
+}
+
+  
+.Hébergement, .populaires, .Activités
+{
+display:flex;
+justify-content:left; 
+flex-direction:column;
 flex-wrap: wrap;
-flex-direction: row;}
+text-align:center;
+}
+ 
+
+.filter
+{border-radius:30px;
+background-color:white;
+border-style:solid ;
+border-width:1px;
+border-color:black;
+margin:10px;
+padding-block-start: 13px;}
 
 img 
 {width: 300px; 
     height: 150px; 
     object-fit: cover;
     border-radius: 30px; 
-border-color:white ;}
+border-color:white ;
+}
 
 
 
-.Activities, footer
-{background-color: white;}
+.about, .rent, .help
+{background-color: white;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+flex-direction:column;
+flex-grow:1;
+margin:auto;
+text-align:left;}
 
 .fa-money-bill-wave:before, .fa-child:before, .fa-heart:before, .fa-dog:before
 {border-radius:50%;
@@ -73,29 +110,33 @@ font-size: 0.9rem;
     margin: 10px;
     padding: 13px;
 
-border-style: solid 0.5px black;
+border-style: solid ;
+border-color:black;
+border-width: 0.5px;
 }
 
+span.icône
+{   border-radius: 86px;
+    border: solid grey;
+    border-width: thin;
+        background-color: white;}
 
-.filter
-{border-radius:30px;
-background-color:white;
-border-style:black solid 1px;
-margin:10px;
-padding-block-start: 13px;}
-
-.filters-ul, .info:before {    background:white;
+.filters-ul, .info:before {   
+   position:relative;
+     background:white;
     color:black;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 25px;
     padding: 25px;
    list-style-type: none;
 
-
-
 }
+footer 
+{display:flex;
+justify-content: center;}
+
 
 
   
