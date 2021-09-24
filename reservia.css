@@ -1,6 +1,6 @@
-/*  210921 font face ok 
+/*  font face ok 
 header footer ok 
-validator ok erreur syntaxe à revoir */
+validator ok 240921 */
 
 @font-face {
     font-family: Raleway;
@@ -8,123 +8,143 @@ validator ok erreur syntaxe à revoir */
          local("Raleway-Thin"),
          url(Raleway/Raleway-VariableFont_wght.ttf);
 }
-body {color:#0065FC;
-font-family: Raleway;}
-
-a
-{
-text-decoration: none;
-color:#0065FC;
-font-weight:bold;}
-a:visited {color:#0065FC;}
-a:hover{color:#0065FC;
-
+body {
+    color:#0065FC;
+    font-family: Raleway;
 }
 
-header {
+/* header OK */
+a
+{
+    text-decoration: none;
+    color:#0065FC;
+    font-weight:bold;
+}
+a:visited 
+{
+    color:#0065FC;
+}
+
+a:hover
+{
+    color:#0065FC;
+}
+
+header 
+{
     display:flex;
-flex-direction:row;
-justify-content: space-between;
+    flex-direction:row;
+    justify-content: space-between;
 }
 
 .logo
 {
     object-fit: contain;
-margin-left: auto;
-float:inline-start;}
+    margin-left: auto;
+    float:inline-start;
+}
 
 .logo img 
-{height: 100px;
-width:100px;}
+{
+    height: 100px;
+    width:100px;
+}
 
 nav, .logo
 {
-float:none;}
-
-section
-{
-background-color:#F2F2F2;
-border-radius: 30px;
-border-spacing:15px;
-display: flex;
-justify-content:center;
-flex-wrap:wrap;
-flex-direction:row;
+    float:none;
 }
 
-.ticontener
-{display:flex;
-flex-wrap:wrap;
-}
-.ticontener2
-{display:flex;
-flex-wrap:wrap;
- 
-}
-
-
-
-
+ /* filtre recherche */
 
 .filter
-{border:none;
-margin:10px;
-padding-block-start: 13px;}
-
-img 
-{width: 300px; 
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 30px; 
-border-color:white ;
+{
+    border:none;
+    margin:10px;
+    padding-block-start: 13px;
 }
-
-
-
-.about, .rent, .help
-{background-color: white;
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-flex-direction:column;
-flex-grow:1;
-margin:auto;
-text-align:left;}
 
 .fa-money-bill-wave:before, .fa-child:before, .fa-heart:before, .fa-dog:before
-{border-radius:50%;
-color:#0065FC;
-background-color:#DEEBFF;
-font-size: 0.9rem;
+{
+    border-radius:50%;
+    color:#0065FC;
+    background-color:#DEEBFF;
+    font-size: 0.9rem;
     margin: 10px;
     padding: 13px;
-border-style: none ;
-
+    border-style: none;
 }
 
-span.icône
-{   border-radius: 86px;
+span.icone,  .info:before
+{   
+    border-radius: 86px;
     border: #F2F2F2 1px; 
-    border-width: none;
-        background-color:#F2F2F2;
-        display:flex;
-        flex-direction: column;
+    background-color:#F2F2F2;
+    display:flex;
+    flex-direction: column;
 }
 
-.filters-li, .info {   
- 
-     background:white;
+.filters-li, .info:before 
+{   
+    background:white;
     color:black;
     display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 15px;
     padding: 13px;
-   list-style-type: none;
-text-align:center;
-
-
+    list-style-type: none;
+    text-align:center;
 }
-footer 
-{display:flex;
-justify-content: center;}
+
+/* contener*/
+
+img 
+{
+    width: 300px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 30px; 
+    border-color:white ;
+}
+
+section
+{
+    background-color:#F2F2F2;
+    border-radius: 30px;
+    border-spacing:15px;
+    display: inline-block;
+    justify-content:stretch;
+    align-content: baseline;
+    height: auto;
+}
+
+.ticontener, .ticontener2
+{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    height:auto;
+    align-content: flex-start;
+    justify-content:space-between;
+}
+
+/* pied de page OK */ 
+
+footer
+{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.about, .rent, .help
+{
+    background-color: white;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    flex-direction:column;
+    flex-grow:1;
+    margin:auto;
+    text-align:left;
+}
