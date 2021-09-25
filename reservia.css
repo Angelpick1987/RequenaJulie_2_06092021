@@ -101,11 +101,12 @@ span.icone,  .info:before
 
 img 
 {
-    width: 300px; 
+    width: 250px; 
     height: 150px; 
     object-fit: cover;
     border-radius: 30px; 
     border-color:white ;
+    
 }
 
 section
@@ -113,20 +114,50 @@ section
     background-color:#F2F2F2;
     border-radius: 30px;
     border-spacing:15px;
-    display: inline-block;
-    justify-content:stretch;
-    align-content: baseline;
-    height: auto;
+    justify-content:center;
+    display:flex;
+    flex-wrap:wrap;
+     
+    
+    
+    
 }
 
-.ticontener, .ticontener2
+.ticontener
 {
     display:flex;
     flex-wrap:wrap;
-    flex-direction: row;
-    height:auto;
-    align-content: flex-start;
-    justify-content:space-between;
+    justify-content:center;
+    
+
+}
+
+.ticontener2
+
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+         
+}
+
+
+
+.hebergements 
+{
+    margin:15px 15px 15px;
+    object-fit: contain;
+}
+
+#hotels
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.populaires 
+{
+    margin:15px 15px 15px; 
 }
 
 /* pied de page OK */ 
