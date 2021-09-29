@@ -1,6 +1,6 @@
-/*  font face ok 
-header footer ok 
-validator ok 240921 */
+/*  290921 resize photos ok 
+ticontener 1&2 ok 
+reste */
 
 @font-face {
     font-family: Raleway;
@@ -55,6 +55,12 @@ nav, .logo
     float:none;
 }
 
+h3, strong
+{ 
+    color:black;
+    font-weight:bold;
+}
+
  /* filtre recherche */
 
 .filter
@@ -102,12 +108,22 @@ span.icone,  .info:before
 img 
 {
     width: 250px; 
-    height: 150px; 
+    height: 200px; 
     object-fit: cover;
     border-radius: 30px; 
     border-color:white ;
     box-shadow: black 4px 4px 4px ;
     
+}
+
+.hôtel
+{    width: 345px; 
+    height: 145px; 
+    object-fit: cover;
+    border-radius: 30px ; 
+    border-color:white ;
+    box-shadow: black 4px 4px 4px ;
+    border-width: 3px white;
 }
 .caption
 {
@@ -115,24 +131,38 @@ img
     left:0; 
     background-color:white; 
     width: 250px; 
-    height: 50px; 
+    height: 70px; 
     object-fit: cover;
      border-radius: 0px 0px 30px 30px;
     position:absolute;
+    text-align:center;
+}
+
+.caption2
+{   
+    position:absolute;
+    object-fit: cover;
+    border-radius: 0px 30px 30px 0px; 
+    height:145px; 
+    width:145px; 
+    top: 0px;
+    left:200px;
+    background-color:white;
+    text-align: center;
+    vertical-align:center;
 }
 
 .ticontener
 {
     background-color:#F2F2F2;
     border-radius: 30px;
-    border-spacing:15px;
+    border-spacing:20px;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-evenly;
     vertical-align: top;
-    height: auto;
-    
-   
+    margin: 15px 15px 15px 15px;
+       
   }
 
 .ticontener2
@@ -172,24 +202,44 @@ img
     position:relative;  
     justify-content: space-around;
     display: flex;
-
+    margin: 15px;
  
 }
 
 #hotels
 {
-background-color:#F2F2F2;
-border-radius:30px ;
-border-spacing:15px;
+    background-color:#F2F2F2;
+    border-radius:30px ;
+    border-spacing:15px;
+    justify-content: space-around;
    
 }
 
 .populaires 
 {
     position:relative;
-   
+    margin:25px;
+  
 }
 
+.gdeimg
+{
+    height: 450px;
+    width:295px; 
+
+}
+
+.moyimg
+{
+    height:240px;
+    width:300px;
+}
+
+.pteimg
+{
+    height:170px; 
+    width:300px;
+}
 /* pied de page OK */ 
 
 footer
