@@ -230,27 +230,30 @@ img
 .Activités  
 {
     display:flex;
-    flex-direction:column; 
-   justify-content:space-between;
+    flex-direction:row; 
+   
 
 }
 
 .col1
 { 
     display:flex; 
-    position:relative; 
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center; 
+    
+    flex-direction:row;
+ 
+     float:left; 
+    
     
     
 }
 
 .col2
 {   display:flex; 
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center; }
+    flex-direction:row;
+     
+   
+    
+   }
 
 
 
@@ -258,10 +261,10 @@ img
 {
     height: 450px;
     width:295px; 
-    position:absolute;
+    
     display:flex;
-    flex-direction:column;
-    justify-content: space-evenly;
+    flex-direction:row;
+    /* flex justify content */
     
 }
 
@@ -270,10 +273,10 @@ img
     height:240px;
     width:300px;
     display:flex;
-    flex-direction:column;
-  
-    justify-content:space-evenly;
-    margin-left: 320px;
+    flex-direction:row;
+  object-fit: cover;
+   /* flex justify content */
+    
       
 }
 
@@ -283,24 +286,11 @@ img
     flex-direction:column; 
     height:170px; 
     width:300px;
-    margin-left:395px; 
+    
     
 }
 
-.caption3
-{     
-    position:absolute;
-    object-fit: cover;
-    border-radius: 30px 0px 0px 30px; 
-    height:32px; 
-    width: 290px; 
-    top: 240px;
-    left:360px;
-    background-color:white;
-    text-align: center;
-    vertical-align:center;
-    color:black; 
-}
+
 
 
 /* pied de page OK */ 
