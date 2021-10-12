@@ -15,6 +15,7 @@ body
 {
     color:#0065FC;
     font-family: Raleway;
+    width: auto;
 }
 
 /* header OK */
@@ -109,6 +110,8 @@ span.icone,  .info:before
 
 /* contener*/
 
+
+
 img 
 {
     width: 250px; 
@@ -116,7 +119,8 @@ img
     object-fit: cover;
     border-radius: 30px; 
     border-color:white ;
-    box-shadow: black 4px 4px 4px ;
+  box-shadow: black 4px 4px 4px ; 
+  
     
 }
 
@@ -175,6 +179,7 @@ img
     background-color:#F2F2F2;
     border-radius: 30px;
     border-spacing:15px;
+    margin-right: 10px;
     display:block;
     justify-content: space-evenly;
     height:auto;
@@ -185,12 +190,9 @@ img
 
     {
     display:flex;
-    flex-direction:column;
-    align-items:flex-start; 
-    justify-content:space-between;
-     border-radius: 30px;
-    border-spacing:15px;
-              
+    flex-wrap:wrap; 
+    border-radius: 30px;
+    justify-content: center;         
     }   
 
 
@@ -200,6 +202,9 @@ img
     justify-content:space-evenly;
     display:flex;
     flex-wrap:wrap;
+    align-items: stretch;
+    margin: 15px;
+    padding: 13px;
 }
 
 .hebergements 
@@ -207,8 +212,7 @@ img
     position:relative;  
     justify-content: space-around;
     display: flex;
-    margin: 15px;
- 
+    margin: 15px; 
 }
 
 #hotels
@@ -216,83 +220,111 @@ img
     background-color:#F2F2F2;
     border-radius:30px ;
     border-spacing:15px;
-    justify-content: space-around;
-   
+    justify-content: space-around;   
 }
 
 .populaires 
 {
     position:relative;
     margin:25px;
-  
 }
-
-.Activités  
-{
-    display:flex;
-    flex-direction:row; 
-   
-
-}
-
-.col1
-{ 
-    display:flex; 
-    
-    flex-direction:row;
- 
-     float:left; 
-    
-    
-    
-}
-
-.col2
-{   display:flex; 
-    flex-direction:row;
-     
-   
-    
-   }
-
 
 
 .gdeimg
 {
     height: 450px;
     width:295px; 
-    
-    display:flex;
-    flex-direction:row;
-    /* flex justify content */
-    
+     
 }
 
 .moyimg
 {
     height:240px;
     width:300px;
-    display:flex;
-    flex-direction:row;
-  object-fit: cover;
-   /* flex justify content */
-    
-      
+
+ 
+   /* flex justify content
+    object-fit: cover; */      
 }
 
 .pteimg
 {
-    display:flex; 
-    flex-direction:column; 
+  
     height:170px; 
     width:300px;
-    
+
+}
+
+#col1bis .caption3 /* gdeimg */
+{
+    position:absolute;
+   
+    border-radius: 0px 0px 30px 30px; 
+ height:50px; 
+    width:295px; 
+    bottom: 0px;
+    left:0px;
+    background-color:white;
+    text-align: center;
     
 }
 
+#col2bis .caption4 /* moyimg */
+{
+    position:absolute;
+    
+    border-radius: 0px 0px 30px 30px; 
+   height:50px; 
+    width:300px;
+   bottom: 0px;
+    left:0px;
+        background-color:white;
+    text-align: center;
+    
+}
 
+#col3bis .caption5 /* pteimg */
+{
+    border-radius: 0px 0px 30px 30px; 
+height:50px; 
+width:300px; 
+bottom: 0px; 
+position:absolute; 
+background-color:white;
+text-align: center;
+}
 
+#col1bis
+{
+position:relative;
+display:block; 
+border-radius: 30px; 
 
+height: 450px;
+}
+
+#col2bis
+{
+    position:relative;
+    display:block;  
+    border-radius: 30px; 
+    
+    height: 240px; 
+}
+
+#col3bis
+{
+    position:relative;
+    display:block; 
+    border-radius: 30px;  
+   
+    height: 170px; 
+}
+
+.colonne 
+{
+
+}
 /* pied de page OK */ 
 
 footer
