@@ -15,7 +15,7 @@ body
 {
     color:#0065FC;
     font-family: Raleway;
-    width: auto;
+   
 }
 
 /* header OK */
@@ -53,6 +53,7 @@ header
 {
     height: 100px;
     width:100px;
+   
 }
 
 nav, .logo
@@ -120,7 +121,7 @@ img
     border-radius: 30px; 
     border-color:white ;
   box-shadow: black 4px 4px 4px ; 
-  
+
     
 }
 
@@ -179,10 +180,12 @@ img
     background-color:#F2F2F2;
     border-radius: 30px;
     border-spacing:15px;
-    margin-right: 10px;
+    margin-right: 50px;
     display:block;
     justify-content: space-evenly;
-    height:auto;
+    float:right; 
+    margin: 15px 15px 15px 15px;
+   
     
 }
 
@@ -205,6 +208,8 @@ img
     align-items: stretch;
     margin: 15px;
     padding: 13px;
+    width: auto;
+    text-align: center;
 }
 
 .hebergements 
@@ -249,36 +254,31 @@ img
 
 .pteimg
 {
-  
     height:170px; 
     width:300px;
-
 }
 
 #col1bis .caption3 /* gdeimg */
 {
-    position:absolute;
-   
+    position:absolute;   
     border-radius: 0px 0px 30px 30px; 
- height:50px; 
+    height:50px; 
     width:295px; 
     bottom: 0px;
     left:0px;
     background-color:white;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 #col2bis .caption4 /* moyimg */
 {
-    position:absolute;
-    
+    position:absolute;    
     border-radius: 0px 0px 30px 30px; 
    height:50px; 
     width:300px;
    bottom: 0px;
     left:0px;
-        background-color:white;
+    background-color:white;
     text-align: center;
     
 }
@@ -321,10 +321,7 @@ height: 450px;
     height: 170px; 
 }
 
-.colonne 
-{
 
-}
 /* pied de page OK */ 
 
 footer
