@@ -1,12 +1,55 @@
-@media all screen and (max-width: 1440px) and (max-width:900px;)
+@media screen and (min-width: 900px) and (max-width:1440px)  /*tablette*/
 { 
-*
+body
 {   
  
     display:block;
     flex-flow:column; 
     flex-direction:column;  
+   
+}
+
+footer
+{
+    display:flex; 
+    flex-wrap:wrap; 
+    
     
 }
 
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) /*smartphones */
+{ 
+/*body
+{   
+ 
+   
+} */
+.logo 
+{
+top:5px; 
+float:inline-start; 
+}
+
+nav 
+{display:flex;
+flex-direction:column-reverse; 
+} 
+span .reve 
+{display:flex; 
+flex-direction: column;}
+
+
+footer
+{
+    display:unset; 
+    justify-content: flex-start;
+    margin-left : 5px ;
+}
+
+.menu1
+{display:flex; 
+flex-direction:row; 
+float:left; }
 }
